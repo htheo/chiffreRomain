@@ -20,8 +20,14 @@
 
 
 function romaniser($num){
-  //I V X  L  C   D   M
-  //1 5 10 50 100 500 1k
+	/* les chiffres romains :
+		1->I
+		5->V
+		10->X
+		50->L
+		100->D
+		1000->M
+	*/
   $unite =array("","I","II","III","IV","V","VI","VII","VIII","IX");       //le tableau des unités
   $chiffreUnite=$unite[$num%10]." ";
  
